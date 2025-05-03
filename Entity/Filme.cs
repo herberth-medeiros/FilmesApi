@@ -4,6 +4,7 @@ namespace FilmesApi.Entity
 {
     public class Filme
     {
+        public int Id { get; set; }
 
         [Required(ErrorMessage = "O titulo do filme e obrigatorio")]
         public string Titulo { get; set; }

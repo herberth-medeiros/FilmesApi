@@ -34,3 +34,4 @@ C:\Users\Herberth\Documents\projetos\FilmesApi\FilmesApi\obj\Debug\net6.0\refint
 C:\Users\Herberth\Documents\projetos\FilmesApi\FilmesApi\obj\Debug\net6.0\FilmesApi.pdb
 C:\Users\Herberth\Documents\projetos\FilmesApi\FilmesApi\obj\Debug\net6.0\FilmesApi.genruntimeconfig.cache
 C:\Users\Herberth\Documents\projetos\FilmesApi\FilmesApi\obj\Debug\net6.0\ref\FilmesApi.dll
+C:\Users\Herberth\Documents\projetos\FilmesApi\FilmesApi\obj\Debug\net6.0\FilmesApi.sourcelink.json
