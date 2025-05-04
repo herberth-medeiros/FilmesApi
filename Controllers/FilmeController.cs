@@ -17,13 +17,13 @@ public class FilmeController : ControllerBase
     }
 
     [HttpPost]
-    public void AdicionarFilme([FromBody] Filme filme)
+    public IActionResult AdicionarFilme([FromBody] Filme filme)
     {
         filme.Id = id++;
         filmes.Add(filme);
-        Console.WriteLine(filme.Titulo);
-        Console.WriteLine(filme.Genero);
-        Console.WriteLine(filme.Duracao);
+       return CreatedAtAction(nameof(RecuperaFilmePorId), 
+           new { id = filme.Id },
+           filme);
     }
 
     [HttpGet("{id}")]
