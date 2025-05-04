@@ -35,3 +35,12 @@ C:\Users\Herberth\Documents\projetos\FilmesApi\FilmesApi\obj\Debug\net6.0\Filmes
 C:\Users\Herberth\Documents\projetos\FilmesApi\FilmesApi\obj\Debug\net6.0\FilmesApi.genruntimeconfig.cache
 C:\Users\Herberth\Documents\projetos\FilmesApi\FilmesApi\obj\Debug\net6.0\ref\FilmesApi.dll
 C:\Users\Herberth\Documents\projetos\FilmesApi\FilmesApi\obj\Debug\net6.0\FilmesApi.sourcelink.json
+C:\Users\Herberth\Documents\projetos\FilmesApi\FilmesApi\bin\Debug\net6.0\Humanizer.dll
+C:\Users\Herberth\Documents\projetos\FilmesApi\FilmesApi\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\Herberth\Documents\projetos\FilmesApi\FilmesApi\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\Herberth\Documents\projetos\FilmesApi\FilmesApi\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\Herberth\Documents\projetos\FilmesApi\FilmesApi\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\Herberth\Documents\projetos\FilmesApi\FilmesApi\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\Herberth\Documents\projetos\FilmesApi\FilmesApi\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\Herberth\Documents\projetos\FilmesApi\FilmesApi\bin\Debug\net6.0\MySqlConnector.dll
+C:\Users\Herberth\Documents\projetos\FilmesApi\FilmesApi\bin\Debug\net6.0\Pomelo.EntityFrameworkCore.MySql.dll
