@@ -39,8 +39,8 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "filme",
-        "Type": "FilmesApi.Entity.Filme",
+        "Name": "filmeDto",
+        "Type": "FilmesApi.Dtos.CreateFilmeDto",
         "IsRequired": true
       }
     ],
