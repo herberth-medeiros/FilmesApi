@@ -38,7 +38,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/Filme"
+                    "$ref": "#/components/schemas/ReadFilmeDto"
                   }
                 }
               },
@@ -46,7 +46,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/Filme"
+                    "$ref": "#/components/schemas/ReadFilmeDto"
                   }
                 }
               },
@@ -54,7 +54,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/Filme"
+                    "$ref": "#/components/schemas/ReadFilmeDto"
                   }
                 }
               }
@@ -110,24 +110,68 @@
         ],
         "responses": {
           "200": {
-            "description": "Success",
-            "content": {
-              "text/plain": {
-                "schema": {
-                  "$ref": "#/components/schemas/Filme"
-                }
-              },
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Filme"
-                }
-              },
-              "text/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Filme"
-                }
+            "description": "Success"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Filme"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateFilmeDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateFilmeDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateFilmeDto"
               }
             }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Filme"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
           }
         }
       }
@@ -161,26 +205,43 @@
         },
         "additionalProperties": false
       },
-      "Filme": {
+      "ReadFilmeDto": {
+        "type": "object",
+        "properties": {
+          "titulo": {
+            "type": "string",
+            "nullable": true
+          },
+          "genero": {
+            "type": "string",
+            "nullable": true
+          },
+          "duracao": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "horaDaConsulta": {
+            "type": "string",
+            "format": "date-time"
+          }
+        },
+        "additionalProperties": false
+      },
+      "UpdateFilmeDto": {
         "required": [
           "duracao",
           "genero",
-          "id",
           "titulo"
         ],
         "type": "object",
         "properties": {
-          "id": {
-            "type": "integer",
-            "format": "int32"
-          },
           "titulo": {
             "minLength": 1,
             "type": "string"
           },
           "genero": {
             "maxLength": 50,
-            "minLength": 1,
+            "minLength": 0,
             "type": "string"
           },
           "duracao": {
